@@ -7,7 +7,8 @@ provider "aws" {
 }
 
 module "vpc" {
-  source  = "app.terraform.io/spacelyspacesprockets/vpc/aws"
+  source  = "terraform-aws-modules/vpc/aws"
+  
   version = "1.43.1"
 
   azs              = ["us-west-2a", "us-west-2b", "us-west-2c"]
